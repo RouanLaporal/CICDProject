@@ -4,6 +4,6 @@ export interface IImc {
     height: number
 }
 export function imcCalculator(imc: IImc) {
-    let imcCalc = imc.weight / (imc.height * imc.height)
+    let imcCalc = Math.floor(imc.weight / (imc.height * imc.height)) / 100
     return imcCalc;
 }

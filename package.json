@@ -11,7 +11,8 @@
     "swagger": "tsoa spec-and-routes",
     "clean": "rimraf build",
     "build": "npm run clean && npm run swagger && tsc && copyfiles public/**/* build/",
-    "start-api": "node ./build/api.js"
+    "start-api": "node ./build/api.js",
+    "unit": "mocha -r ts-node/register \"test/unit/suites/**/*.test.ts\""
   },
   "author": "",
   "license": "ISC",
